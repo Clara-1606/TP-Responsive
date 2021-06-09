@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>TP Responsive</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <script>
+      function changeClass(objSelector, nameOfClass) {
+        const obj = document.querySelector(objSelector);
+        obj.classList.toggle(nameOfClass);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class ="menu flex">
+      <nav class = "flex">
+        <ul class = "flex">
+          <li class =" loupe"><img class="logo " src="assets/search.svg" alt="loupe" /></li>
+          <li class =" cloche"><img class="logo " src="assets/bell.svg"  alt="cloche"/></li>
+          <li class =" parametre"><img class="logo" src="assets/gear_white.svg"  alt="parametre"/></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <article class="chat">
+        <div class="informations">
+            <h2> Short Title</h2>
+            <div class="date">
+                <p class="texteGris jour jourDifferent">Today</p>
+                <p class="texteGris">15 : 32</p>
+            </div>
+        </div>
+          <img class="imageArticle" src="assets/img1.png" alt="chat" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </article>
+
+        <article class="lac">
+            <div class="informations">
+                <h2> Longer Title set</h2>
+                <p class="texteGris jour">Today</p>
+                <p class="texteGris">15 : 32</p>
+            </div>
+              <img class="imageArticle imageLac" src="assets/img2.png" alt="lac" />
+              <div >
+                <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+            </div>
+              <div class = "containerBouton">
+                <img class="bouton" src="assets/like.svg" alt="pouce" />
+                <button>READ IT</button>
+                <img class="bouton" src="assets/gear.svg" alt="parametre" />
+              </div>  
+            </article>
+
+        <article class="coeur">
+        <div class="informations">
+            <h2>A very long Title set on two lines</h2>
+            <p class="texteGris jour">Today</p>
+            <p class="texteGris">15 : 32</p>
+        </div>
+          <img class="imageArticle" src="assets/img3.png" alt="coeur" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </article>
+
+        <article class="main">
+            <div class="informations">
+                <h2> Will be a Horizontal scroll</h2>
+                <p class="texteGris jour">Today</p>
+                <p class="texteGris">15 : 32</p>
+            </div>
+              <img class="imageArticle" src="assets/img4.png" alt="main" />
+              <div >
+                <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+            </div>
+              <div class = "containerBouton">
+                <img class="bouton" src="assets/like.svg" alt="pouce" />
+                <button>READ IT</button>
+                <img class="bouton" src="assets/gear.svg" alt="parametre" />
+              </div>  
+            </article>
+    </section>
+
+    <!-- <div class="container">
+        <div class="test"><div class="informations">
+            <h2> Will be a Horizontal scroll</h2>
+            <p class="texteGris jour">Today</p>
+            <p class="texteGris">15 : 32</p>
+        </div>
+          <img class="imageArticle" src="assets/img1.png" alt="main" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </div>
+        <div class="test"><div class="informations">
+            <h2> Will be a Horizontal scroll</h2>
+            <p class="texteGris jour">Today</p>
+            <p class="texteGris">15 : 32</p>
+        </div>
+          <img class="imageArticle" src="assets/img4.png" alt="main" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </div>
+        <div class="test"><div class="informations">
+            <h2> Will be a Horizontal scroll</h2>
+            <p class="texteGris jour">Today</p>
+            <p class="texteGris">15 : 32</p>
+        </div>
+          <img class="imageArticle" src="assets/img4.png" alt="main" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </div>
+        <div class="test"><div class="informations">
+            <h2> Will be a Horizontal scroll</h2>
+            <p class="texteGris jour">Today</p>
+            <p class="texteGris">15 : 32</p>
+        </div>
+          <img class="imageArticle" src="assets/img4.png" alt="main" />
+          <div >
+            <p class = "paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Aliter enim nosmet ipsos nosse non possumus.</p>
+        </div>
+          <div class = "containerBouton">
+            <img class="bouton" src="assets/like.svg" alt="pouce" />
+            <button>READ IT</button>
+            <img class="bouton" src="assets/gear.svg" alt="parametre" />
+          </div>  
+        </div> -->
+    </div>
+  </body>
+</html>
